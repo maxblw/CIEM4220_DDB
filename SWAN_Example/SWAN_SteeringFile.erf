@@ -1,0 +1,13 @@
+Error            : Set of output locations is not known
+Error            : Illegal keyword: NOHEAD  
+Error            : Data field skipped:swan_specout_bulk2.txt                                                                                                                                                              
+Error            : Illegal keyword: XP      
+Error            : Illegal keyword: YP      
+Error            : Illegal keyword: HSIGN   
+Error            : Illegal keyword: RTP     
+Error            : Illegal keyword: DIR     
+Error            : Illegal keyword: TM01    
+Error            : Illegal keyword: TM02    
+Error            : Illegal keyword: TMM10   
+Error            : Illegal keyword: PDIR    
+Error            : command BOTTOM is replaced by INP BOT

@@ -1,0 +1,50 @@
+$*************************HEADING************************
+PROJ 'Lecture' '01'
+$********************MODEL INPUT*************************
+SET LEVEL 1.00
+SET NAUTical
+MODE STATIONARY TWODimensional
+$******************Grid and Bottom***********************
+$ *** DEFINE Computational grid  ***
+$       xpc   ypc    alpc	xlenc   ylenc	mxc myc	Type    mdc  flow  fhigh  msc
+CGRID 779500 4917000 95.0 30000.0 17500.0 299 174 CIRcle 36 0.03 1.0 50
+$ *** DEFINE Bathymetry ***
+$              xpc       ypc         alpc  mxc  myc   dx	  dy
+INPGRID BOTTOM 701560.77 4803432.30  0.0   3886  3288 98.04 98.05 EXC -9999.
+READINP BOTTOM 1. 'bathymetry_swan.dep' 1 0 FREE
+$****************Boundary Conditions*********************
+$*** Waves ***
+BOUnd SHAPespec JONswap 3.3 PEAK DSPR DEGRees
+$BOUndspec SIDE North CCW CONstant PAR 3.5 10.10 120.0 14.9
+BOUndspec SIDE South CCW CONstant PAR 3.5 10.00 120.0 14.9
+BOUndspec SIDE East  CCW CONstant PAR 3.5 10.00 120.0 14.9
+$*** Wind ***
+WIND 15.7 133
+$*********************Processes***************************
+BREaking
+FRICtion JONswap CONstant 0.038
+QUAD
+TRIad
+$*********************NUMERICS***************************
+NUMeric STOPC STAT alfa=0.01
+$**********************OUTPUT****************************
+$ *** MATRIX OUTPUT SAME AS COMPUTACIONAL GRID ***
+BLOCK 'COMPGRID' NOHEAD 'Result.mat' LAY 3 XP YP BOTLEV WIND HS RTP TM01 TM02 TMM10 PDIR DIR
+$ *** POINT OUTPUT ***
+POINts 'pt1' 762500.0 4932000.0
+SPECout 'pt1' SPEC1D ABS 'swan_specout1.txt'
+TABLE  'pt1' NOHEAD 'swan_specout_bulk1.txt' XP YP HSIGN RTP DIR TM01 TM02 TMM10 PDIR BOTLEV
+POINts 'pt2' 765000.0 4933000.0
+SPECout 'pt2' SPEC1D ABS 'swan_specout2.txt'
+TABLE  'pt2' NOHEAD 'swan_specout_bulk2.txt' XP YP HSIGN RTP DIR TM01 TM02 TMM10 PDIR BOTLEV
+$ *** CURVE OUTPUT ***
+CURve 'T1' 778245.0 4933370.0 200 761192.0 4931934.0
+TABLE 'T1' HEAD 'swan_transect1.tab' XP YP HSIGN RTP BOTLEV PDIR
+COMPUTE
+STOP
+
+
+
+
+
+
