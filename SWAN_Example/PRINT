@@ -1,6 +1,6 @@
 1
 
-                    Execution started at 20250512.141644         
+                    Execution started at 20250512.142010         
 
 
 
@@ -30,7 +30,7 @@
     
  $       xpc   ypc    alpc	xlenc   ylenc	mxc myc	Type    mdc  flow  fhigh  msc
     
- CGRID 779500 4917000 95.0 30000.0 17500.0 19 19 CIRcle 36 0.03 1.0 50
+ CGRID 779500 4917000 95.0 30000.0 17500.0 299 175 CIRcle 36 0.03 1.0 50
  Resolution in sigma-space: df/f =  0.0726
     
  $ *** DEFINE Bathymetry ***
@@ -40,6 +40,14 @@
  INPGRID BOTTOM 701560.77 4803432.30  0.0   3886  3288 98.04 98.05 EXC -9999.
     
  READINP BOTTOM 1. 'bathymetry_swan.dep' 1 0 FREE
+ ** Warning          : Point removed from computational grid
+Point with index (   245,   169) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
+ ** Warning          : Point removed from computational grid
+Point with index (   166,   169) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
+ ** Warning          : Point removed from computational grid
+Point with index (     3,   143) was removed from computational grid because it is an isolated wet point or is part of a 1D configuration or 1D connection.
+ ** Warning          : Point removed from computational grid
+Point with index (   274,   169) was removed from computational grid, because it is part of a 1D configuration or 1D connection.
     
  $****************Boundary Conditions*********************
     
@@ -103,8 +111,8 @@
                   COMPUTATIONAL PART OF SWAN
 ----------------------------------------------------------------
 
- Gridresolution       : MXC              20 MYC             20
-                      : MCGRD           362
+ Gridresolution       : MXC             300 MYC            176
+                      : MCGRD         48568
                       : MSC              51 MDC             36
                       : MTC               1
                       : NSTATC            0 ITERMX          50
@@ -115,7 +123,7 @@
                       : IBRAG             0 IQCM             0
                       : IVEG              0 ITURBV           0
                       : IMUD              0 IICE             0
- Spatial step         : DX       0.1579E+04 DY      0.9211E+03
+ Spatial step         : DX       0.1003E+03 DY      0.1000E+03
  Spectral bin         : df/f     0.7265E-01 DDIR    0.1000E+02
  Physical constants   : GRAV     0.9810E+01 RHO     0.1025E+04
  Wind input           : WSPEED   0.1570E+02 DIR     0.1370E+03
@@ -166,82 +174,3 @@
                       : CDRAG    0.1230E-02 UMIN    0.1000E+01
                       : LIM_PM   0.1300E+00
  
-  ---------------------------------------------------------------
-  First guess by 2nd generation model flags for first iteration:
-  ITER       1 GRWMX      0.1000E+23 ALFA       0.0000E+00
-  IWIND      2 IWCAP      0 IQUAD      0
-  ITRIAD     5 IBOT       1 ISURF      1
-  IVEG       0 ITURBV     0 IMUD       0        IBRAG    0
-  IICE       0 ICEWIND    0.00
-  ---------------------------------------------------------------
- iteration    1; sweep 1
- iteration    1; sweep 2
- iteration    1; sweep 3
- iteration    1; sweep 4
- not possible to compute, first iteration
-
-  ---------------------------------------------------------------
-  Options given by user are activated for proceeding calculation:
-  ITER       2 GRWMX      0.1000E+00 ALFA       0.1000E-01
-  IWIND      5 IWCAP      7 IQUAD      2
-  ITRIAD     5 IBOT       1 ISURF      1
-  IVEG       0 ITURBV     0 IMUD       0        IBRAG    0
-  IICE       0 ICEWIND    0.00
-  ---------------------------------------------------------------
- iteration    2; sweep 1
- iteration    2; sweep 2
- iteration    2; sweep 3
- iteration    2; sweep 4
- accuracy OK in  32.97 % of wet grid points ( 99.50 % required)
-
- iteration    3; sweep 1
- iteration    3; sweep 2
- iteration    3; sweep 3
- iteration    3; sweep 4
- accuracy OK in  10.25 % of wet grid points ( 99.50 % required)
-
- iteration    4; sweep 1
- iteration    4; sweep 2
- iteration    4; sweep 3
- iteration    4; sweep 4
- accuracy OK in  52.08 % of wet grid points ( 99.50 % required)
-
- iteration    5; sweep 1
- iteration    5; sweep 2
- iteration    5; sweep 3
- iteration    5; sweep 4
- accuracy OK in  60.12 % of wet grid points ( 99.50 % required)
-
- iteration    6; sweep 1
- iteration    6; sweep 2
- iteration    6; sweep 3
- iteration    6; sweep 4
- accuracy OK in  69.81 % of wet grid points ( 99.50 % required)
-
- iteration    7; sweep 1
- iteration    7; sweep 2
- iteration    7; sweep 3
- iteration    7; sweep 4
- accuracy OK in  78.12 % of wet grid points ( 99.50 % required)
-
- iteration    8; sweep 1
- iteration    8; sweep 2
- iteration    8; sweep 3
- iteration    8; sweep 4
- accuracy OK in  88.09 % of wet grid points ( 99.50 % required)
-
- iteration    9; sweep 1
- iteration    9; sweep 2
- iteration    9; sweep 3
- iteration    9; sweep 4
- accuracy OK in  96.40 % of wet grid points ( 99.50 % required)
-
- iteration   10; sweep 1
- iteration   10; sweep 2
- iteration   10; sweep 3
- iteration   10; sweep 4
- accuracy OK in 100.00 % of wet grid points ( 99.50 % required)
-
- 
-    
- STOP
