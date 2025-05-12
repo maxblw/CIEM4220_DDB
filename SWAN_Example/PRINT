@@ -174,3 +174,56 @@ Point with index (   274,   169) was removed from computational grid, because it
                       : CDRAG    0.1230E-02 UMIN    0.1000E+01
                       : LIM_PM   0.1300E+00
  
+  ---------------------------------------------------------------
+  First guess by 2nd generation model flags for first iteration:
+  ITER       1 GRWMX      0.1000E+23 ALFA       0.0000E+00
+  IWIND      2 IWCAP      0 IQUAD      0
+  ITRIAD     5 IBOT       1 ISURF      1
+  IVEG       0 ITURBV     0 IMUD       0        IBRAG    0
+  IICE       0 ICEWIND    0.00
+  ---------------------------------------------------------------
+ iteration    1; sweep 1
+ iteration    1; sweep 2
+ iteration    1; sweep 3
+ iteration    1; sweep 4
+ not possible to compute, first iteration
+
+  ---------------------------------------------------------------
+  Options given by user are activated for proceeding calculation:
+  ITER       2 GRWMX      0.1000E+00 ALFA       0.1000E-01
+  IWIND      5 IWCAP      7 IQUAD      2
+  ITRIAD     5 IBOT       1 ISURF      1
+  IVEG       0 ITURBV     0 IMUD       0        IBRAG    0
+  IICE       0 ICEWIND    0.00
+  ---------------------------------------------------------------
+ iteration    2; sweep 1
+ iteration    2; sweep 2
+ iteration    2; sweep 3
+ iteration    2; sweep 4
+ accuracy OK in  29.04 % of wet grid points ( 99.50 % required)
+
+ iteration    3; sweep 1
+ iteration    3; sweep 2
+ iteration    3; sweep 3
+ iteration    3; sweep 4
+ accuracy OK in   3.94 % of wet grid points ( 99.50 % required)
+
+ iteration    4; sweep 1
+ iteration    4; sweep 2
+ iteration    4; sweep 3
+ iteration    4; sweep 4
+ accuracy OK in  48.77 % of wet grid points ( 99.50 % required)
+
+ iteration    5; sweep 1
+ iteration    5; sweep 2
+ iteration    5; sweep 3
+ iteration    5; sweep 4
+ accuracy OK in  58.91 % of wet grid points ( 99.50 % required)
+
+ iteration    6; sweep 1
+ iteration    6; sweep 2
+ iteration    6; sweep 3
+ iteration    6; sweep 4
+ accuracy OK in  68.62 % of wet grid points ( 99.50 % required)
+
+ iteration    7; sweep 1
