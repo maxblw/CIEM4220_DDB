@@ -34,7 +34,7 @@ $ *** POINT OUTPUT ***
 POINts 'pt1' 762500.0 4932000.0
 SPECout 'pt1' SPEC1D ABS 'swan_specout1.txt'
 TABLE  'pt1' NOHEAD 'swan_specout_bulk1.txt' XP YP HSIGN RTP DIR TM01 TM02 TMM10 PDIR BOTLEV
-POINts 'pt2' 765000.0 4933000.0
+POINts 'pt2' 778000.0 4933000.0
 SPECout 'pt2' SPEC1D ABS 'swan_specout2.txt'
 TABLE  'pt2' NOHEAD 'swan_specout_bulk2.txt' XP YP HSIGN RTP DIR TM01 TM02 TMM10 PDIR BOTLEV
 $ *** CURVE OUTPUT ***
