@@ -1,6 +1,6 @@
 1
 
-                    Execution started at 20250512.151910         
+                    Execution started at 20250513.112207         
 
 
 
@@ -87,13 +87,13 @@ Point with index (   274,   169) was removed from computational grid, because it
     
  $ *** POINT OUTPUT ***
     
- POINts 'pt1' 762500.0 4932000.0
+ POINts 'pt1' 762897.5 4932077.6
     
  SPECout 'pt1' SPEC1D ABS 'swan_specout1.txt'
     
  TABLE  'pt1' NOHEAD 'swan_specout_bulk1.txt' XP YP HSIGN RTP DIR TM01 TM02 TMM10 PDIR BOTLEV
     
- POINts 'pt2' 778000.0 4933000.0
+ POINts 'pt2' 777248.5 4933286.1
     
  SPECout 'pt2' SPEC1D ABS 'swan_specout2.txt'
     
