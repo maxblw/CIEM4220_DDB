@@ -1,6 +1,6 @@
 1
 
-                    Execution started at 20250513.112207         
+                    Execution started at 20250522.091418         
 
 
 
@@ -103,7 +103,7 @@ Point with index (   274,   169) was removed from computational grid, because it
     
  CURve 'T1' 778245.0 4933370.0 200 761192.0 4931934.0
     
- TABLE 'T1' HEAD 'swan_transect1.tab' XP YP HSIGN RTP BOTLEV PDIR
+ TABLE 'T1' HEAD 'swan_transect1.tab' XP YP HSIGN RTP BOTLEV PDIR TM01
     
  COMPUTE
 
